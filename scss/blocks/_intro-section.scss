@@ -1,0 +1,112 @@
+.intro-section {
+    background-image: url("../../image/hero-img-1.png");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: -100px 10px;
+}
+.intro {
+    padding-bottom: 250px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    background-image: url("../../image/group-img.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.intro__box {
+    width: 540px;
+}
+.intro__title {
+    color: #FFF;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100px; 
+}
+.intro__title-color {
+    color: #F67E7E;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100px;
+}
+.intro__demo {
+    width: 445px;
+}
+.intro__line {
+    width: 50px;
+    height: 4px;
+    margin-bottom: 79px;
+    display: inline-block;
+    background-color: #79C8C7;
+}
+.intro__text {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; 
+}
+
+@media only screen and (max-width: 768px){
+    .intro-section{
+        background-image: none;
+    }
+    .intro{
+        background-image: url(../../image/Tablet-bg.png);
+        background-position: center bottom;
+        flex-direction: column;
+    }
+    .intro__box{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .intro__line{
+        display: none;
+    }
+    .intro__title{
+        text-align: center;
+        font-size: 64px;
+        line-height: 56px; 
+    }
+    .intro__title-color{
+        font-size: 64px;
+        font-style: normal;
+    }
+    .intro__demo{
+        width: 100%;
+    }
+    .intro__text{
+        text-align: center;
+        font-size: 15px;
+        line-height: 28px; 
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .intro__box{
+        margin-bottom: 18px;
+    }
+    .intro__title{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .intro{
+        padding-bottom: 197px;
+        background-image: url("../../image/mobile-bg.png");
+        background-position: center bottom;
+    }
+    .intro__title-color{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .intro__text{
+        font-size: 15px;
+        line-height: 28px; 
+    }
+}
+@media only screen and (max-width: 410px){
+   .intro{
+    background-size: contain;
+   }
+}

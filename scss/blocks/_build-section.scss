@@ -1,0 +1,129 @@
+.build-section {
+    padding: 140px 0;
+    background-color: #012F34;
+    background-image: url("../../image/build-bg.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.build__line {
+    width: 50px;
+    height: 4px;
+    margin-bottom: 54px;
+    display: inline-block;
+    background-color: #F67E7E;
+}
+.build__wrap{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.build__wrapper {
+    width: 445px;
+}
+.build__title {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; 
+}
+.build__box {
+    width: 540px;
+}
+.build__item {
+    display: flex;
+    align-items: start;
+}
+.build__item + .build__item{
+    margin-top: 32px;
+}
+.build__demo {
+    margin-left: 23px;
+}
+.build__bold {
+    margin-bottom: 16px;
+    display: inline-block;
+    color: #F67E7E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+}
+.build__text {
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; 
+}
+@media only screen and (max-width: 768px){
+    .build-section{
+        padding: 100px 0 100px 0;
+        background-image: url(../../image/build-tablet-bg.png);
+        background-position: right top;
+    }
+    .build__wrap{
+        flex-direction: column;
+    }
+    .build__line{
+        margin-bottom: 32px;
+    }
+    .build__wrapper{
+        width: 100%;
+        margin-bottom: 64px;
+        text-align: start;
+    }
+    .build__title{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .build__box{
+        width: 100%;
+    }
+    .build__bold{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .build__text{
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+@media only screen and (max-width:560px){
+    .build-section{
+        margin: 0;
+        padding: 64px 0 16px 0;
+        background-image: url("../../image/build-mobile-bg.png");
+        background-position: right top;
+    }
+    .build__wrapper{
+        width: 100%;
+        margin-bottom: 56px;
+    }
+    .build__title{
+        font-size: 32px;
+        line-height: 32px; 
+    }
+    .build__box{
+        width: 100%;
+    }
+    .build__item{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .build__demo{
+        margin-left: 0;
+    }
+    .build__bold{
+        margin-top: 16px;
+        font-size: 18px;
+        line-height: 28px; 
+    }
+    .build__text{
+        margin-bottom: 48px;
+        font-size: 15px;
+        line-height: 25px; 
+        opacity: 0.8;
+    }
+}
