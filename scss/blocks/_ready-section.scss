@@ -6,7 +6,7 @@
    background-position: left bottom;
 }
 .ready__wrapper {
-    width: 953px;
+    max-width: 953px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,14 +43,15 @@
         background-image: url("../../image/ready-tablet-bg.png");
         background-position: left bottom;
     }
-    .ready__wrapper{
+    .ready__wrapper {
         width: 100%;
-        text-align: center;
+       text-align: center;
     }
     .ready__bold{
         font-size: 32px;
         line-height: 32px; /* 100% */
     }
+    
 }
 @media only screen and (max-width: 560px){
     .ready-section{
@@ -59,8 +60,6 @@
         background-position: left bottom;
     }
     .ready__wrapper{
-        width: 100%;
-        text-align: center;
         flex-direction: column;
     }
     .ready__bold{
